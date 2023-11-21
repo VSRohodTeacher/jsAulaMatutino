@@ -7,3 +7,13 @@ var numero2 = Number(prompt("Digite o seu segundo número"));
 var soma = numero1 + numero2;
 
 alert(`O resultado da soma é de ${soma}`);
+
+//OPERADORES ARITMÉTICOS
+// + SOMAR (CONCATENAR)
+// - SUBTRAIR
+// * MULTIPLICAR
+// ** ELEVAR UM NÚMERO
+// / DIVIDIR
+// = ATRIBUIR
+// ++ SOMAR MAIS UM AO NUMERO
+// -- SUBTRAIR UM AO NUMERO
