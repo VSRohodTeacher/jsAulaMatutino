@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .post{
+            width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(220, 220, 220);
+        }
+    </style>
+</head>
+<body>
+    <h1>CRIE O SEU CARRO!</h1>
+    <form>
+        <input type="text" id="marca" placeholder="marca">
+        <input type="text" id="modelo" placeholder="modelo">
+        <input type="date" id="data" placeholder="data">
+        <input type="color" id="cor" placeholder="cor">
+        <input type="number" id="velocidadeMax" placeholder="velocidadeMax">
+        <button type="button" id="btnCarro">CRIAR CARRO</button>
+    </form>
+
+    <div id="resposta"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
