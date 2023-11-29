@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Roboto;
+}
+
+:root{
+    --roxo : #7f03e4 ;
+    --verde : #00c54c ;
+    --vermelho : #ff0044 ;
+    --azul : #0337e4 ;
+    --cinza: #c5c5c5;
+    --cinzaEscuro: #535353;
+    --branco : #fff;
+    --light: #e3e3e3;
+}
+
+body{
+    background-color: var(--cinza);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Poppins;
+    color: var(--roxo) ;
+    margin: 10px 0px;
+}
+
+.m{
+    margin: 10px 0px;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    border: 2px solid var(--roxo);
+    transition: 0.5s;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    background-color: var(--roxo);
+    border-radius: 10px;
+    border: none;
+    color: var(--branco);
+    transition: 0.5s;
+}
+
+.btnDanger{
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
+#page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza);
+}
+
+main{
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--branco);
+    box-shadow: 10px 10px 10px var(--cinzaEscuro);
+    display: flex;
+}
+
+#filmeBannerTemplate{
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.images{
+    width: 100%;
+}
+
+form, #resposta{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FORM */
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0px;
+}
+
+/* RESPOSTA */
+#resposta{
+    height: 550px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-y: scroll;
+    padding: 20px 0px;
+}
+
+::-webkit-scrollbar{
+    width: 0%;
+    display: none;
+}
+
+.filme{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--light);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 10px 20px;
+}
+
+.tituloFilme{
+    color: var(--roxo);
+}
+
+.textoFilme{
+    color: var(--cinzaEscuro);
+}
+
+.categoriaFilme{
+    font-size: 10pt;
+    color: var(--azul);
+}
+
+#erroCadastro{
+    color: var(--vermelho);
+}
+
+/* animation */
+button:hover{
+    box-shadow: 5px 5px 10px var(--cinzaEscuro);
+    transition: 0.5s;
+}
+
+input:focus{
+    width: 210px;
+    height: 25px;
+    transition: 0.5s;
+}
+
+button:active{
+    background-color: transparent;
+    color: var(--roxo);
+    transition: 0.1s;
+}
+
+.btnDanger:active{
+    color: var(--vermelho);
+}
+
+/* script */
+.success{
+    color: var(--verde);
+}
+
+.error{
+    color: var(--vermelho);
+}
