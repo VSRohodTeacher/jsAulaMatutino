@@ -38,7 +38,7 @@ function msg(){
         setTimeout(() => {
             console.log("Bom dia!");
             resolve()
-        }, 2000);
+        }, 5000);
         
     })
 }
